@@ -24,7 +24,7 @@ export default {
       return Math.floor(Math.random() * (max-min +1))+min
     },
     getRandomFormBackend(){
-      const path ='http://localhost:9000/api/random'
+      const path ='http://35.190.195.31:9000/api/random'
       axios.get(path)
         .then(response=>{
           this.randomNumber=response.data.randomNumber
